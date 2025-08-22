@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARSEN S.A. DE C.V.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: #003399;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .search-bar {
+            width: 50%;
+        }
+        .carousel-item img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        /* Solución para el carrusel en móviles */
+        @media (max-width: 767.98px) {
+            .carousel-item img {
+                height: 250px;
+                object-position: center;
+            }
+        }
+
+        .carousel-caption {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: rgb(0, 0, 0);
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            color: black;
+        }
+        .category-icons img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer {
+            background-color: #E65C00;
+            color: white;
+            padding: 20px 0;
+        }
+
+        /* Estilos personalizados para la sección de ubicación */
+        .bg-gradient {
+            background: linear-gradient(135deg, #ff6600, #ff007f);
+        }
+
+        .btn-custom-orange {
+            background-color: #ff6600;
+            border-color: #ff6600;
+            color: white;
+        }
+
+        .btn-custom-orange:hover, .btn-custom-orange:focus {
+            background-color: #e65c00;
+            border-color: #e65c00;
+            color: white;
+        }
+
+        .btn-custom-pink {
+            background-color: #ff007f;
+            border-color: #ff007f;
+            color: white;
+        }
+
+        .btn-custom-pink:hover, .btn-custom-pink:focus {
+            background-color: #cc0066;
+            border-color: #cc0066;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ARSEN S.A. DE C.V.</a>
+        </div>
+    </nav>
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Foset.png" class="d-block w-100" alt="Producto 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Hermex.jpeg" class="d-block w-100" alt="Producto 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Pretul.jpeg" class="d-block w-100" alt="Producto 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Truper.jpeg" class="d-block w-100" alt="Producto 4">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Volteck.jpeg" class="d-block w-100" alt="Producto 5">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Fiero.jpeg" class="d-block w-100" alt="Producto 6">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Klintek.jpg" class="d-block w-100" alt="Producto 7">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid bg-gradient py-5 text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-5">CONOCE TU SUCURSAL MÁS CERCANA</h1>
+            <div class="d-flex justify-content-center flex-column flex-md-row gap-4">
+                <a href="https://maps.app.goo.gl/oPrVrgVNF5r8BRoW8" 
+                   target="_blank" 
+                   class="btn btn-custom-orange btn-lg rounded-pill fw-bold px-5 py-3 shadow-lg">
+                   📍 Sucursal Progreso de Obregon
+                </a>
+                <a href="https://maps.app.goo.gl/fuxXDBnrngWbmyvD9" 
+                   target="_blank" 
+                   class="btn btn-custom-pink btn-lg rounded-pill fw-bold px-5 py-3 shadow-lg">
+                   📍 Sucursal Tulipanes
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-5">
+        <h2 class="text-center display-5 fw-bold mb-4">Sobre Nosotros</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="img/mega fix.jpg" class="img-fluid rounded-3 shadow-sm" alt="Fachada de la sucursal">
+            </div>
+            <div class="col-md-6">
+                <p class="lead">
+                    Somos una empresa dedicada a ofrecer productos de alta calidad para la construcción,
+                    plomería y ferretería en general. Contamos con una amplia variedad de artículos de las
+                    mejores marcas, garantizando la satisfacción de nuestros clientes.
+                </p>
+                <p>
+                    Visítanos y descubre por qué somos tu mejor opción para cualquier proyecto.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-5 text-center">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="display-5 fw-bold mb-4">Horario y Contacto</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 rounded-3 shadow-sm mb-4">
+                    <h4 class="fw-bold text-primary">Horario de Atención</h4>
+                    <p class="fs-5">Lunes a Viernes: 8:30 a.m. - 6:00 p.m.</p>
+                    <p class="fs-5">Sábados: 9:00 a.m. - 5:00 p.m.</p>
+                    <p class="fs-5">Domingos: 10:00 a.m. - 5:00 p.m.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 rounded-3 shadow-sm">
+                    <h4 class="fw-bold text-success">Contactos</h4>
+                    <p class="fs-5">Teléfono: +52 738 735 7141</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center display-5 fw-bold mb-4">Encuéntranos Aquí</h2>
+        <div class="ratio ratio-16x9 rounded-3 shadow">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.3739896554625!2d-99.19436457672693!3d20.24331860821989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3d71bfca4d6d3%3A0x14c4e355b2d25a7f!2sMega%20Fix%20Ferreter%C3%ADas%20Progreso%20de%20Obreg%C3%B3n!5e0!3m2!1ses-419!2smx!4v1755895322118!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <p>Términos y condiciones | Aviso de privacidad</p>
+        <p>ARSEN S.A. DE C.V. Todos los derechos reservados</p>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100077458932382&mibextid=wwXIfr" 
+                target="_blank" 
+                title="Visitar página oficial">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" 
+                    alt="Facebook" 
+                    style="width:40px; height:40px;">
+            </a>  
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
